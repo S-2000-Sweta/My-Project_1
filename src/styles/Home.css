@@ -1,0 +1,106 @@
+/* General Home Styles */
+.home {
+  position: relative;
+  min-height: 100vh; /* Occupies the full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content towards the top */
+  color: oldlace;
+  text-align: center;
+  /* padding: 20px; */
+  margin-top: -50px; /* Move the content slightly upwards */
+  z-index: 1;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(248, 198, 16);
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+/* Banner Styles */
+.banner {
+  position: relative;
+  width: 100vw; /* Ensures the banner spans the full width of the viewport */
+  height: 70vh; /* Adjust height to occupy more of the viewport */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Fallback if images don't load */
+  margin-top: 75px;
+}
+
+.banner-image {
+  width: 100%; /* Ensures image stretches to fill full width */
+  height: 100%; /* Ensures the image takes full height */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Slider Button Styles */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5rem; /* Larger size for icons */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s;
+  border-radius: 50%; /* Optional: Circular buttons */
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+
+.banner-title {
+  font-size: 2rem;
+  color: #f8c610;
+}
+
+.banner-description {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Call to Action Button Styles */
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #ff7f00;
+}
+
+.home-content {
+  margin-top: 2px;
+}
